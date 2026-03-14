@@ -1,3 +1,5 @@
+import streamlit as st
+from gtts import gTTS
 st.title("tàu hàng liều lĩnh đi qua eo biển ")
 
 tin1 ='Các công ty có thể kiếm hàng triệu USD cho mỗi chuyến tàu qua eo biển Hormuz, bất chấp phí bảo hiểm và lương thủy thủ cao.'
