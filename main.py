@@ -1,3 +1,18 @@
-import streamlit as st 
-st.image('https://www.google.com/imgres?q=photo&imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1508921912186-1d1a45ebb3c1%3Ffm%3Djpg%26q%3D60%26w%3D3000%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.1.0%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8fDA%253D&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fphoto&docid=AgAT_yR1X6xrJM&tbnid=-gICFkUsIVmdYM&vet=12ahUKEwiko5u2np-TAxWaklYBHeozA40QnPAOegQIGhAB..i&w=3000&h=4500&hcb=2&ved=2ahUKEwiko5u2np-TAxWaklYBHeozA40QnPAOegQIGhAB',caption='US-Angriffe auf iranische Öl-Insel Kharg
-')
+st.title("tàu hàng liều lĩnh đi qua eo biển ")
+
+tin1 ='Các công ty có thể kiếm hàng triệu USD cho mỗi chuyến tàu qua eo biển Hormuz, bất chấp phí bảo hiểm và lương thủy thủ cao.'
+st.write(tin1)
+tin2 = 'Ngày 13/3, Reuters trích dữ liệu của các công ty theo dấu tàu biển Lloyd’s List Intelligence và MarineTraffic cho thấy ít nhất 10 tàu do các công ty Hy Lạp vận hành và ít nhất 2 tàu do Trung Quốc vận hành đã đi qua eo biển Hormuz từ khi xung đột tại Trung Đông xảy ra ngày 28/2. Số tàu này chở cả dầu và hàng hóa thông thường.'
+st.write(tin2)
+and = 'https://i1-kinhdoanh.vnecdn.net/2026/03/14/iran-tanker-1773463485-7413-1773463537.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=2DGMCCcPUSFz8RoNH6Jl8g'
+st.image(anh,'caption(Các tàu dầu ở vùng biển gần eo biển Hormuz ngày 11/3. Ảnh: Reuter))
+#sound
+if st.button('đọc nội dung'):
+    tts= gTTS(text=tin1+tin2,lang='vi')
+    output_file='output_file'
+    audio_file = open(output_file,'rb'#open binary binary file 
+    mp3 = audio.file.read()# đọc toàn bộ 
+    st.audio(mp3,format='audio/mp3')
+    
+st.write('video minh hoa ')
+st.video('https://www.youtube.com/watch?v=5PHGGUMzAu0',format='video/mp4')
