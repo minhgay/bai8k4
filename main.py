@@ -12,6 +12,7 @@ st.image(anh,caption='Các tàu dầu ở vùng biển gần eo biển Hormuz ng
 if st.button('đọc nội dung'):
     tts= gTTS(text=tin1+tin2,lang='vi')
     output_file='output_file'
+    tts.save(output_file)
     audio_file = open(output_file,'rb')#open binary binary file 
     mp3 = audio.file.read()# đọc toàn bộ 
     st.audio(mp3,format='audio/mp3')
