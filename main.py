@@ -17,5 +17,5 @@ if st.button('đọc nội dung'):
     mp3 = audio_file.read()# đọc toàn bộ 
     st.audio(mp3,format='audio/mp3')
     
-st.write('video minh hoa ')
+st.write('video minh hoạ ')
 st.video('https://www.youtube.com/watch?v=5PHGGUMzAu0',format='video/mp4')
