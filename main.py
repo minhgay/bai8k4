@@ -14,7 +14,7 @@ if st.button('đọc nội dung'):
     output_file='output_file'
     tts.save(output_file)
     audio_file = open(output_file,'rb')#open binary binary file 
-    mp3 = audio.file.read()# đọc toàn bộ 
+    mp3 = audio_file.read()# đọc toàn bộ 
     st.audio(mp3,format='audio/mp3')
     
 st.write('video minh hoa ')
